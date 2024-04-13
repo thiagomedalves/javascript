@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com o usuário.</title>
+    <script>
+        nome = prompt("Digite o seu nome");
+    </script>
+</head>
+<body>
+
+    <p>Ola, Sr(a).</p>
+    <p></p>
+    <p>Seja bem vindo</p>
+    <script>
+        document.getElementsByTagName("p")[1].innerHTML=nome;
+    </script>
+</body>
+</html>
