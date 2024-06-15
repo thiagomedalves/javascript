@@ -1,18 +1,24 @@
-function verifica()  {
+function verifica(){
 
-    var nota = document.getElementsByTagName("input")[0].value;
-    var resultado = "Aprovado";
-    if (nota >= 7){
-        resultado
-    }
-    else if (nota <= 4){
-        resultado = "Reprovado";
-    }
-    else{
-        resultado = "Recuperação";
-    }
 
-    document.getElementsByTagName("label")[1].innerHTML=resultado;
-    
+var nota = document.getElementsByTagName("input")[0].value;
+
+var resultado="aprovado";
+if (nota>=7){
+    resultado
+}
+else if (nota<=4){
+    resultado="reprovado";
+}
+
+else{
+
+resultado = "recuperação";
+
+}
+
+document.getElementsByTagName("label")[1].innerHTML=resultado;
+
+
 
 }
