@@ -47,7 +47,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?language=pt-br&page=1&api_key=
         cartaz.appendChild(votos);
         cartaz.appendChild(titulo);
         cartaz.appendChild(lancamento);
-        
+
 
 
         estrutura.appendChild(cartaz);
@@ -68,10 +68,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?language=pt-br&page=1&api_key=
 // let p=1;
 // // cidades.forEach(exibir);
 
-// function exibir(itens){
-//     console.log(`${p}ª${itens}`);
-//     p++;
-// }
+
 
 
 // cidades.forEach((itens)=>{
