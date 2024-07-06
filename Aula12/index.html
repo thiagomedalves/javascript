@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="listar()">
+
+
+    <a href="#" id="menu"> ≡ Menu </a>
+    <div id="nav">
+        <a href="#" id="fechar">&times;</a>
+        <nav>
+            <ul>
+                <li ><a href="#" id="home">home</a></li>
+                <li ><a href="#" id="cadastrar" onclick="abrircadastrar()">cadastratar</a></li>
+                <li >
+
+                    <form action="">
+                        <input type="search" id="buscar" placeholder=" buscar livro... ">
+                        <button type="button" onclick="resultado()"> buscar </button>
+                    
+                    </form>
+
+
+                </li>
+              
+            </ul>
+        </nav>
+    </div>
+
+      <section id="listar">
+        <h3>Livros em Destaques</h3>
+        <div id="listarlivros">
+
+
+        </div>
+
+
+      </section>
+
+      <section id="resultado">
+        <div class="resultadobusca">
+
+        </div>
+      </section>
+      
+      <section id="inserir">
+        <h3>Cadastrar Livros</h3>
+        <form >
+            <input type="text"  id="txttitulo" placeholder="titulo do livro">
+            <input type="text" id="txtautor" placeholder="autor">
+            <input type="text" id="txtpreco" placeholder="preço">
+            <input type="text" id="txtfoto1" placeholder="foto do livro">
+            <input type="text" id="txtfoto2" placeholder="foto do livro">
+            <select id="txtgenero"> 
+                <option value="selecione">selecione</option>
+                <option value="romance">romance</option>
+                <option value="religião">religião</option>
+                <option value="Autoajuda">Autoajuda</option>
+                <option value="Biografia">Biografia</option>
+                <option value="drama">drama</option> 
+            </select>
+            <textarea id="txtsinopse" >Escreva a sinopse aqui</textarea>
+            <button onclick="inserir()">Cadastrar</button>
+        
+        
+        
+        </form>
+        
+    
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
